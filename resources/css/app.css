@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .hd-1{
+        @apply mb-4 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl;
+    }
+    .hd-2{
+        @apply text-4xl font-bold;
+    }
+    .hd-3{
+        @apply text-3xl font-bold;
+    }
+    .hd-4{
+        @apply text-2xl font-bold;
+    }
+    .hd-5{
+        @apply text-xl font-bold;
+    }
+    .hd-6{
+        @apply text-lg;
+    }
+    .pr-gray{
+        @apply text-lg font-normal text-gray-500 lg:text-xl leading-relaxed;
+    }
+    .pr-gray-md{
+        @apply text-lg font-normal text-gray-500;
+    }
+    .subtitle{
+        @apply text-gray-500 sm:text-xl
+    }
+    .btn{
+        @apply cursor-pointer transition-all bg-indigo-600 text-white shadow rounded-md py-2 px-4 hover:backdrop-blur-md hover:bg-indigo-700 hover:shadow-sm hover:shadow-indigo-700;
+    }
+
+    .btn-primary {
+        @apply cursor-pointer transition-colors bg-gray-100 border-2 border-solid border-gray-300 rounded-md p-1;
+    }
+
+    .btn-time{
+        @apply cursor-pointer transition-colors rounded-md p-2 shadow text-center hover:text-indigo-600 border
+    }
+
+    .btn-time.selected{
+        @apply bg-indigo-600 text-white
+    }
+
+    .day-item {
+        @apply flex flex-col justify-between md:h-24 cursor-pointer p-1 transition border border-solid border-gray-300 rounded-md
+    }
+}
